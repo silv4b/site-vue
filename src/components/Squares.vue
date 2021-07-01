@@ -90,10 +90,8 @@ export default {};
   margin: 10px;
   margin-bottom: 20px;
   font-size: 1rem;
-  font-weight: 300;
   color: $secondary-color;
-  //color: $white-color;
-  //opacity: 60% !important;
+  font-weight: 300;
 }
 
 .text-bottom {
