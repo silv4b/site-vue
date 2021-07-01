@@ -91,8 +91,9 @@ export default {};
   margin-bottom: 20px;
   font-size: 1rem;
   font-weight: 300;
-  color: $white-color;
-  opacity: 60% !important;
+  color: $secondary-color;
+  //color: $white-color;
+  //opacity: 60% !important;
 }
 
 .text-bottom {
