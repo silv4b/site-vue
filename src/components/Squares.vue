@@ -92,7 +92,7 @@ export default {};
   font-size: 1rem;
   font-weight: 300;
   color: $white-color;
-  opacity: 60%;
+  opacity: 60% !important;
 }
 
 .text-bottom {
