@@ -63,9 +63,38 @@
               <i class="bx bx-mail-send"></i>
             </a>
           </div>
-          <div class="text-bottom">Feito com amor 💖.</div>
+          <div class="social center">
+            <a
+              href="https://twitter.com/silv4b"
+              target="_blank"
+              class="home__social-icon"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+          <div class="social center">
+            <a
+              href="https://dribbble.com/silvab"
+              target="_blank"
+              class="home__social-icon"
+            >
+              <i class="bx bxl-dribbble"></i>
+            </a>
+          </div>
+          <div class="social center">
+            <a
+              href="https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm"
+              target="_blank"
+              class="home__social-icon"
+            >
+              <i class="bx bxl-spotify"></i>
+            </a>
+          </div>
         </div>
-        <div class="logo-img"></div>
+        <div class="flex column center">
+          <div class="text-bottom">Feito com amor 💖.</div>
+          <div class="logo-img"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -106,7 +135,7 @@ export default {};
   width: 50px;
   height: 50px;
   background-size: 50px 50px;
-  background-image: url("https://raw.githubusercontent.com/silv4b/site-vue/main/src/assets/logo.png?token=AEJJ7YQZPCOCZRELOMUROPTA4YYYU");
+  background-image: url("https://raw.githubusercontent.com/silv4b/site-vue/fb1e6065740e517c175a7e29933049f1919147da/src/assets/logo.svg?token=AEJJ7YQBHDSUB764RGX6XKTA365HW");
   margin-bottom: 40px;
 }
 
