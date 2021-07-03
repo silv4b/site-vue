@@ -135,7 +135,7 @@ export default {};
   width: 50px;
   height: 50px;
   background-size: 50px 50px;
-  background-image: url("https://raw.githubusercontent.com/silv4b/site-vue/fb1e6065740e517c175a7e29933049f1919147da/src/assets/logo.svg?token=AEJJ7YQBHDSUB764RGX6XKTA365HW");
+  background-image: url(https://raw.githubusercontent.com/silv4b/site-vue/main/src/assets/logo.png?token=AEJJ7YQZPCOCZRELOMUROPTA4YYYU);
   margin-bottom: 40px;
 }
 
@@ -144,7 +144,7 @@ export default {};
   margin-bottom: 30px;
   width: 150px;
   height: 150px;
-  background-image: url("https://avatars.githubusercontent.com/u/17997794?v=4");
+  background-image: url(https://avatars.githubusercontent.com/u/17997794?v=4);
   background-size: 150px 150px;
   border: 6px;
   border-radius: 100%;
