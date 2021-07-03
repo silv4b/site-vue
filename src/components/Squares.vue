@@ -63,6 +63,7 @@
               <i class="bx bx-mail-send"></i>
             </a>
           </div>
+          <!--
           <div class="social center">
             <a
               href="https://twitter.com/silv4b"
@@ -90,6 +91,7 @@
               <i class="bx bxl-spotify"></i>
             </a>
           </div>
+          -->
         </div>
         <div class="flex column center">
           <div class="text-bottom">Feito com amor 💖.</div>
@@ -141,7 +143,7 @@ export default {};
 
 .profile {
   margin: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 0 !important;
   width: 150px;
   height: 150px;
   background-image: url(https://avatars.githubusercontent.com/u/17997794?v=4);
