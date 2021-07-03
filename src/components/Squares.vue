@@ -8,7 +8,7 @@
       <div class="text-job">User Interface Designer</div>
       <div class="social-cards flex flex-row space-around wrap">
         <div class="social-cards flex flex-row space-around wrap">
-          <div class="social flex center">
+          <div class="social center">
             <a
               href="https://www.linkedin.com/in/silv4b/"
               target="_blank"
@@ -17,7 +17,7 @@
               <i class="bx bxl-linkedin-square"></i>
             </a>
           </div>
-          <div class="social flex center">
+          <div class="social center">
             <a
               href="https://www.instagram.com/uisilvab/"
               target="_blank"
@@ -26,7 +26,7 @@
               <i class="bx bxl-instagram"></i>
             </a>
           </div>
-          <div class="social flex center">
+          <div class="social center">
             <a
               href="https://www.figma.com/@silv4b"
               target="_blank"
@@ -111,7 +111,8 @@ export default {};
 }
 
 .profile {
-  margin-top: 70px;
+  margin: 70px;
+  margin-bottom: 30px;
   width: 150px;
   height: 150px;
   background-image: url("https://avatars.githubusercontent.com/u/17997794?v=4");
@@ -119,6 +120,7 @@ export default {};
   border: 6px;
   border-radius: 100%;
   border-style: solid;
+  transition: 0.5s;
   border-color: $primary-color;
 }
 
@@ -133,14 +135,15 @@ export default {};
   display: flex;
   width: 100px;
   height: 100px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: $primary-color;
-  transition: 0.2s ease-in;
+  transition: 0.17s ease-in;
   margin: 20px;
 }
 
 .social:hover {
-  transform: scale(1.25);
+  transform: scale(1.2);
+  border-radius: 10px !important;
   background-color: $white-color;
   .home__social-icon {
     color: $primary-color;
