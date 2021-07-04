@@ -4,11 +4,12 @@
       <!-- PRIMEIRO ELEMENTO -->
       <div class="elemento1"></div>
 
+      <!-- SEGUNDO ELEMENTO -->
       <div class="container">
         <div class="texto">Opa, amigos!</div>
         <div class="texto">Opa, amigos novamente!</div>
       </div>
-      <!-- SEGUNDO ELEMENTO -->
+      <!-- TERCEIRO ELEMENTO -->
       <div class="container-row">
         <div class="elemento2"></div>
         <div class="elemento2"></div>
@@ -18,7 +19,7 @@
         <div class="elemento2"></div>
       </div>
 
-      <!-- TERCEIRO ELEMENTO -->
+      <!-- QUARTO ELEMENTO -->
       <div class="container">
         <div class="texto">Opa, amigos!</div>
       </div>
