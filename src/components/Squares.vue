@@ -8,65 +8,15 @@
 
       <!-- SEGUNDO ELEMENTO -->
       <div class="container">
-        <div class="text-name">Bruno Silva | @silv4b</div>
-        <div class="text-job">User Interface Designer</div>
+        <div class="text-name">{{ texts[0] }}</div>
+        <div class="text-job">{{ texts[1] }}</div>
       </div>
 
       <!-- TERCEIRO ELEMENTO -->
       <div class="container-row">
-        <div class="social center">
-          <a
-            href="https://www.linkedin.com/in/silv4b/"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="bx bxl-linkedin-square"></i>
-          </a>
-        </div>
-        <div class="social center">
-          <a
-            href="https://www.instagram.com/uisilvab/"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-        </div>
-        <div class="social center">
-          <a
-            href="https://www.figma.com/@silv4b"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="bx bxl-figma"></i>
-          </a>
-        </div>
-        <div class="social center">
-          <a
-            href="https://github.com/silv4b"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="bx bxl-github"></i>
-          </a>
-        </div>
-        <div class="social center">
-          <a
-            href="https://gitlab.com/silv4b"
-            target="_blank"
-            class="home__social-icon"
-            alt="OPA"
-          >
-            <i class="bx bxl-gitlab"></i>
-          </a>
-        </div>
-        <div class="social center">
-          <a
-            href="mailto:brunoxbkd@gmail.com"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="bx bx-mail-send"></i>
+        <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard">
+          <a :href="sl.social" :class="classSocialIcons">
+            <i :class="sl.iclass"></i>
           </a>
         </div>
       </div>
@@ -74,22 +24,68 @@
 
     <!-- QUARTO ELEMENTO -->
     <div class="container">
-      <div class="text-bottom">Feito com amor 👨‍💻.</div>
+      <div class="text-bottom">{{ texts[2] }}</div>
       <div class="logo-img">
         <img
           src="https://raw.githubusercontent.com/silv4b/site-vue/main/src/assets/logo.svg?token=AEJJ7YTFN45YRGXULCXQO5TA5NOSQ"
-          alt=""
         />
       </div>
     </div>
-
-    <!-- QUINTO ELEMENTO -->
-    <div class="container"></div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      classCard: "social center",
+      classSocialIcons: "home__social_icon",
+      texts: [
+        "Bruno Silva | @silv4b",
+        "User Interface Designer",
+        "Feito com amor 👨‍💻",
+      ],
+      socialList: [
+        {
+          id: 1,
+          social: "LinkedIn",
+          href: "https://www.linkedin.com/in/silv4b/",
+          iclass: "bx bxl-linkedin-square",
+        },
+        {
+          id: 2,
+          social: "Instagram",
+          href: "https://www.instagram.com/uisilvab/",
+          iclass: "bx bxl-instagram",
+        },
+        {
+          id: 3,
+          social: "Figma",
+          href: "https://www.figma.com/@silv4b",
+          iclass: "bx bxl-figma",
+        },
+        {
+          id: 4,
+          social: "Github",
+          href: "https://github.com/silv4b",
+          iclass: "bx bxl-github",
+        },
+        {
+          id: 5,
+          social: "Gitlab",
+          href: "https://gitlab.com/silv4b",
+          iclass: "bx bxl-gitlab",
+        },
+        {
+          id: 6,
+          social: "Email",
+          href: "mailto:brunoxbkd@gmail.com",
+          iclass: "bx bx-mail-send",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -141,12 +137,12 @@ export default {};
   transform: scale(1.2);
   border-radius: 10px !important;
   background-color: $white-color;
-  .home__social-icon {
+  .home__social_icon {
     color: $primary-color;
   }
 }
 
-.home__social-icon {
+.home__social_icon {
   display: flex;
   justify-content: center;
   align-items: center;
