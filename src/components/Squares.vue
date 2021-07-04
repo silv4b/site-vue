@@ -15,7 +15,7 @@
       <!-- TERCEIRO ELEMENTO -->
       <div class="container-row">
         <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard">
-          <a :href="sl.social" :class="classSocialIcons">
+          <a :href="sl.href" target="_blank" :class="classSocialIcons">
             <i :class="sl.iclass"></i>
           </a>
         </div>
@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       classCard: "social center",
-      classSocialIcons: "home__social_icon",
+      classSocialIcons: "social_icon_style",
       texts: [
         "Bruno Silva | @silv4b",
         "User Interface Designer",
@@ -137,12 +137,12 @@ export default {
   transform: scale(1.2);
   border-radius: 10px !important;
   background-color: $white-color;
-  .home__social_icon {
+  .social_icon_style {
     color: $primary-color;
   }
 }
 
-.home__social_icon {
+.social_icon_style {
   display: flex;
   justify-content: center;
   align-items: center;
