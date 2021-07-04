@@ -63,35 +63,6 @@
               <i class="bx bx-mail-send"></i>
             </a>
           </div>
-          <!--
-          <div class="social center">
-            <a
-              href="https://twitter.com/silv4b"
-              target="_blank"
-              class="home__social-icon"
-            >
-              <i class="bx bxl-twitter"></i>
-            </a>
-          </div>
-          <div class="social center">
-            <a
-              href="https://dribbble.com/silvab"
-              target="_blank"
-              class="home__social-icon"
-            >
-              <i class="bx bxl-dribbble"></i>
-            </a>
-          </div>
-          <div class="social center">
-            <a
-              href="https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm"
-              target="_blank"
-              class="home__social-icon"
-            >
-              <i class="bx bxl-spotify"></i>
-            </a>
-          </div>
-          -->
         </div>
         <div class="flex column center">
           <div class="text-bottom">Feito com amor 💖.</div>

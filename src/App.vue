@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <Squares />
+    <Template />
   </div>
 </template>
 
 <script>
-import Squares from "./components/Squares.vue";
+//import Squares from "./components/Squares.vue";
+import Template from "./components/Template.vue";
 
 export default {
   name: "App",
   components: {
-    Squares,
+    //Squares,
+    Template,
   },
 };
 </script>
