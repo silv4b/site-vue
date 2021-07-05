@@ -1,3 +1,38 @@
+.spotify-button {
+  background-color: $primary-color;
+  margin: 10px;
+  border-radius: 10px;
+  width: 380px;
+  transition: 0.2s ease-in-out;
+}
+
+.change_later {
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.spotify-button > div > a {
+  margin: 10px;
+}
+
+.spotify-button:hover {
+  transform: scale(1.1);
+  background-color: $white-color;
+  .change_later {
+    color: $primary-color;
+  }
+  .social_icon_style_2 {
+    color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+}
+
 .profile {
   margin-bottom: 0 !important;
   width: 150px;
@@ -57,7 +92,18 @@
   font-size: 3rem;
   color: $white-color;
   text-decoration: none;
-  transition: 0.2s ease-out;
+  transition: 0.2s ease-in-out;
+}
+
+.social_icon_style_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  font-size: 2rem;
+  color: $white-color;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
 .center {

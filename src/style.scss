@@ -60,3 +60,11 @@ $full-background-color: #111114;
     margin-bottom: 50px;
   }
 }
+
+@media only screen and (max-device-width: 419px) {
+  .spotify-button {
+    background-color: $primary-color;
+    border-radius: 10px;
+    max-width: 240px;
+  }
+}

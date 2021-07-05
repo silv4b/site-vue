@@ -21,6 +21,15 @@
         </div>
       </div>
 
+      <div class="container">
+        <div class="spotify-button">
+          <div class="container-row">
+            <a class="social_icon_style_2"><i class="bx bxl-spotify"></i> </a>
+            <div class="change_later">Playlists</div>
+          </div>
+        </div>
+      </div>
+
       <!-- QUARTO ELEMENTO -->
       <div class="container">
         <div class="text-bottom">{{ texts[2] }}</div>
