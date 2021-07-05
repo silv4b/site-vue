@@ -22,7 +22,11 @@
       </div>
 
       <div class="container">
-        <div class="spotify-button">
+        <div
+          type="button"
+          onclick="alert('Aqui vai aparecer um modal com playlists')"
+          class="spotify-button"
+        >
           <div class="container-row">
             <a class="social_icon_style_2"><i class="bx bxl-spotify"></i> </a>
             <div class="change_later">Playlists</div>
