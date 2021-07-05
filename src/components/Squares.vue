@@ -21,6 +21,7 @@
         </div>
       </div>
 
+      <!-- QUARTO ELEMENTO
       <div class="container">
         <div
           type="button"
@@ -32,9 +33,9 @@
             <div class="change_later">Playlists</div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- QUARTO ELEMENTO -->
+      <!-- QUINTO ELEMENTO -->
       <div class="container">
         <div class="text-bottom">{{ texts[2] }}</div>
         <div class="logo-img">
