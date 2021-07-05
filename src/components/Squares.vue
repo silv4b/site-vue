@@ -20,15 +20,15 @@
           </a>
         </div>
       </div>
-    </div>
 
-    <!-- QUARTO ELEMENTO -->
-    <div class="container">
-      <div class="text-bottom">{{ texts[2] }}</div>
-      <div class="logo-img">
-        <img
-          src="https://raw.githubusercontent.com/silv4b/site-vue/main/src/assets/logo.svg?token=AEJJ7YTFN45YRGXULCXQO5TA5NOSQ"
-        />
+      <!-- QUARTO ELEMENTO -->
+      <div class="container">
+        <div class="text-bottom">{{ texts[2] }}</div>
+        <div class="logo-img">
+          <img
+            src="https://raw.githubusercontent.com/silv4b/site-vue/main/src/assets/logo.svg?token=AEJJ7YTFN45YRGXULCXQO5TA5NOSQ"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -88,7 +88,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "src/style.scss";
 @import "./Squares.style.scss";
 </style>
