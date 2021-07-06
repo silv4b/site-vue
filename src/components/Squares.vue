@@ -21,19 +21,15 @@
         </div>
       </div>
 
-      <!-- QUARTO ELEMENTO
+      <!-- QUARTO ELEMENTO -->
       <div class="container">
-        <div
-          type="button"
-          onclick="alert('Aqui vai aparecer um modal com playlists')"
-          class="spotify-button"
-        >
+        <div type="button" @click="spotifyLink()" class="spotify-button">
           <div class="container-row">
             <a class="social_icon_style_2"><i class="bx bxl-spotify"></i> </a>
-            <div class="change_later">Playlists</div>
+            <div class="change_later"></div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- QUINTO ELEMENTO -->
       <div class="container">
@@ -50,6 +46,14 @@
 
 <script>
 export default {
+  methods: {
+    spotifyLink: function () {
+      window.open(
+        "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm?si=ad49b6d20e134832&nd=1",
+        "_blank"
+      );
+    },
+  },
   data() {
     return {
       classCard: "social center",
