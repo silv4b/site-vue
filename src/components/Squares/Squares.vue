@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <!-- PLAYLIST 
+      <!-- PLAYLIST SPOTIFY 
       <div class="container">
         <div type="button" @click="spotifyLink()" class="spotify-button">
           <div class="container-row">
@@ -30,7 +30,7 @@
         </div>
       </div> -->
 
-      <!-- MODAL -->
+      <!-- MODAL PLAYLISTS SPOTIFY -->
       <div class="container">
         <div
           type="button"
@@ -47,7 +47,21 @@
             <h1>Playlists</h1>
           </template>
           <template v-slot:body>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="container a90">
+              <div class="flex left spotify-pl-card">
+                <div class="card-pl-art"></div>
+                <div class="spotify-pl-container">
+                  <div class="spotify-pl-title">Songs to not be sad!</div>
+                  <div class="spotify-pl-desc">
+                    Uma playlist bem aleatório pra você curtir sem medo de ser
+                    feliz.
+                  </div>
+                </div>
+              </div>
+              <div class="flex left spotify-pl-card">
+                <div class="card-pl-art2"></div>
+              </div>
+            </div>
           </template>
         </modal>
       </div>
@@ -127,6 +141,34 @@ export default {
           iclass: "bx bx-mail-send",
         },
       ],
+      playlists: [
+        {
+          id: 1,
+          nome: "🎶 Songs to not be sad 2.0",
+          link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
+          image:
+            "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
+        },
+        {
+          id: 2,
+          nome: "🎵 Songs to not be sad",
+          link: "https://open.spotify.com/playlist/1sBicr7fa2fbPJlBNq6hCX",
+          image:
+            "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
+        },
+        {
+          id: 3,
+          nome: "Songs about Git",
+          link: "https://open.spotify.com/playlist/0MJBni0UzdnML1amikx0Rc",
+          image:
+            "https://i.scdn.co/image/ab67706c0000bebb9946720997b8d6c50f7f216a",
+        },
+      ],
+      playlistsImage: [
+        "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
+        "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
+        "https://i.scdn.co/image/ab67706c0000bebb9946720997b8d6c50f7f216a",
+      ],
     };
   },
 };
@@ -135,4 +177,70 @@ export default {
 <style lang="scss" scoped>
 @import "../../style.scss";
 @import "../Squares/Squares.style.scss";
+@import "../Modal/Modal.style.scss";
+
+.a90 {
+  color: whitesmoke;
+  font-weight: 200;
+  display: flex;
+}
+
+.spotify-pl-card {
+  height: 200px;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  background: $full-background-color;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.spotify-pl-card:hover {
+  transform: scale(1.04);
+}
+
+.spotify-pl-container {
+  max-width: 450px;
+  //height: 150px;
+  height: auto;
+  background: $primary-color;
+  padding: 20px 0;
+}
+
+.spotify-pl-title {
+  font-weight: 400 !important;
+  font-size: 1.3rem;
+}
+
+.spotify-pl-desc {
+  font-weight: 200 !important;
+  font-size: 1.2rem;
+}
+
+.card-pl-art {
+  height: 200px;
+  width: 200px;
+  background: $white-color;
+  margin-right: 30px;
+  border-radius: 6px 0 0 6px;
+  /*  ISSO VAI SAIR DAQUI E VAI PARA A DIV,
+      POIS SERÁ USADO UM V-FOR PRA ITERAR SOBRE
+      A LISTA DE OBJETOS CRIADA. */
+  background: url(https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b);
+  background-size: 202px 202px;
+  background-position: center;
+}
+
+// DELETAR DEPOIS
+
+.card-pl-art2 {
+  height: 200px;
+  width: 200px;
+  background: $white-color;
+  margin-right: 30px;
+  border-radius: 6px 0 0 6px;
+  background: url(https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3);
+  background-size: 202px 202px;
+  background-position: center;
+}
 </style>

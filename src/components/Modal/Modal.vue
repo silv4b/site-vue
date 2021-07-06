@@ -9,9 +9,9 @@
         <div class="modal__body">
           <slot name="body" />
         </div>
-        <div class="modal__footer">
+        <!-- <div class="modal__footer">
           <slot name="footer" />
-        </div>
+        </div> -->
       </div>
     </div>
   </transition>
@@ -64,6 +64,7 @@ export default {
   &__dialog {
     position: relative;
     width: 600px;
+    height: auto;
     background-color: $primary-color !important;
     border-radius: 5px;
     margin: 50px auto;
@@ -82,10 +83,10 @@ export default {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 20px 20px 10px;
+    padding: 20px 40px 10px;
   }
   &__body {
-    padding: 10px 20px 10px;
+    padding: 10px 40px 10px;
     overflow: auto;
     display: flex;
     flex-direction: column;
