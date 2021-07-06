@@ -1,18 +1,18 @@
 <template>
   <div class="master-border">
     <div class="container">
-      <!-- PRIMEIRO ELEMENTO -->
+      <!--  PERFIL -->
       <div class="container">
         <div class="profile"></div>
       </div>
 
-      <!-- SEGUNDO ELEMENTO -->
+      <!-- TEXTOS -->
       <div class="container">
         <div class="text-name">{{ texts[0] }}</div>
         <div class="text-job">{{ texts[1] }}</div>
       </div>
 
-      <!-- TERCEIRO ELEMENTO -->
+      <!-- REDES SOCIAIS -->
       <div class="container-row">
         <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard">
           <a :href="sl.href" target="_blank" :class="classSocialIcons">
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <!-- QUARTO ELEMENTO -->
+      <!-- PLAYLIST -->
       <div class="container">
         <div type="button" @click="spotifyLink()" class="spotify-button">
           <div class="container-row">
@@ -31,7 +31,29 @@
         </div>
       </div>
 
-      <!-- QUINTO ELEMENTO -->
+      <!-- MODAL -->
+      <div class="container">
+        <div
+          type="button"
+          @click="$refs.modalName.openModal()"
+          class="spotify-button"
+        >
+          <div class="container-row">
+            <a class="social_icon_style_2"><i class="bx bxs-playlist"></i> </a>
+            <div class="change_later"></div>
+          </div>
+        </div>
+        <modal ref="modalName">
+          <template v-slot:header>
+            <h1>Playlists</h1>
+          </template>
+          <template v-slot:body>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </template>
+        </modal>
+      </div>
+
+      <!-- TEXTO E LOGO -->
       <div class="container">
         <div class="text-bottom">{{ texts[2] }}</div>
         <div class="logo-img">
@@ -45,7 +67,12 @@
 </template>
 
 <script>
+import Modal from "./Modal.vue";
+
 export default {
+  components: {
+    Modal,
+  },
   methods: {
     spotifyLink: function () {
       window.open(
@@ -109,4 +136,5 @@ export default {
 <style lang="scss" scoped>
 @import "src/style.scss";
 @import "./Squares.style.scss";
+@import "./Modal.style.scss";
 </style>
