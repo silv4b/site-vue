@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import Modal from "./Modal.vue";
+import Modal from "../Modal/Modal.vue";
 
 export default {
   components: {
@@ -133,7 +133,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/style.scss";
-@import "./Squares.style.scss";
-@import "./Modal.style.scss";
+@import "../../style.scss";
+@import "../Squares/Squares.style.scss";
 </style>

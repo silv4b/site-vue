@@ -40,9 +40,8 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "src/style.scss";
-@import "./Squares.style.scss";
-@import "./Modal.style.scss";
+@import "../../style.scss";
+@import "../Modal/Modal.style.scss";
 
 .modal {
   position: fixed;
