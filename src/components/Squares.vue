@@ -21,15 +21,14 @@
         </div>
       </div>
 
-      <!-- PLAYLIST -->
+      <!-- PLAYLIST 
       <div class="container">
         <div type="button" @click="spotifyLink()" class="spotify-button">
           <div class="container-row">
             <a class="social_icon_style_2"><i class="bx bxl-spotify"></i> </a>
-            <div class="change_later"></div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- MODAL -->
       <div class="container">

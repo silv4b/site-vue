@@ -40,6 +40,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "src/style.scss";
+@import "./Squares.style.scss";
 @import "./Modal.style.scss";
 
 .modal {
@@ -63,7 +65,7 @@ export default {
   &__dialog {
     position: relative;
     width: 600px;
-    background-color: #ffffff;
+    background-color: $primary-color !important;
     border-radius: 5px;
     margin: 50px auto;
     display: flex;

@@ -46,9 +46,7 @@ $full-background-color: #111114;
 }
 
 @media only screen and (max-device-width: 419px) {
-  .button {
-    background-color: $primary-color;
-    border-radius: 10px;
-    max-width: 240px;
+  .spotify-button {
+    width: 240px !important;
   }
 }
