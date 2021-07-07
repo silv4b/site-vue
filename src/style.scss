@@ -58,4 +58,23 @@ $full-background-color: #111114;
   .spotify-button {
     width: 240px !important;
   }
+
+  .spotify-pl-title,
+  .spotify-pl-desc {
+    display: none;
+  }
+
+  .spotify-pl-card {
+    width: 200px !important;
+  }
+
+  .card-pl-art,
+  .card-pl-art2 {
+    margin-right: 0 !important;
+    border-radius: 6px !important;
+  }
+
+  .modal__header {
+    padding: 20px 60px 10px !important;
+  }
 }

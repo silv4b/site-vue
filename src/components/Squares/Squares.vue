@@ -48,18 +48,25 @@
           </template>
           <template v-slot:body>
             <div class="container a90">
-              <div class="flex left spotify-pl-card">
+              <div @click="spotifyLink1()" class="flex left spotify-pl-card">
                 <div class="card-pl-art"></div>
                 <div class="spotify-pl-container">
-                  <div class="spotify-pl-title">Songs to not be sad!</div>
+                  <div class="spotify-pl-title">🎵 Songs to not be sad</div>
                   <div class="spotify-pl-desc">
-                    Uma playlist bem aleatório pra você curtir sem medo de ser
-                    feliz.
+                    Uma playlist bem aleatória pra você curtir sem medo de ser
+                    feliz, variando desde de rap até theme songs de animes.
                   </div>
                 </div>
               </div>
-              <div class="flex left spotify-pl-card">
+              <div @click="spotifyLink2()" class="flex left spotify-pl-card">
                 <div class="card-pl-art2"></div>
+                <div class="spotify-pl-container">
+                  <div class="spotify-pl-title">🎶 Songs to not be sad 2.0</div>
+                  <div class="spotify-pl-desc">
+                    Versão 2.0 da playlist anterior, mais aleatória, mas
+                    interessante, só vai!
+                  </div>
+                </div>
               </div>
             </div>
           </template>
@@ -92,6 +99,12 @@ export default {
         "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm?si=ad49b6d20e134832&nd=1",
         "_blank"
       );
+    },
+    spotifyLink1: function () {
+      window.open(this.playlists[0].link, "_blank");
+    },
+    spotifyLink2: function () {
+      window.open(this.playlists[1].link, "_blank");
     },
   },
   data() {
@@ -144,37 +157,29 @@ export default {
       playlists: [
         {
           id: 1,
-          nome: "🎶 Songs to not be sad 2.0",
-          link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
-          image:
-            "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
-        },
-        {
-          id: 2,
           nome: "🎵 Songs to not be sad",
           link: "https://open.spotify.com/playlist/1sBicr7fa2fbPJlBNq6hCX",
           image:
             "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
         },
         {
-          id: 3,
-          nome: "Songs about Git",
-          link: "https://open.spotify.com/playlist/0MJBni0UzdnML1amikx0Rc",
+          id: 2,
+          nome: "🎶 Songs to not be sad 2.0",
+          link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
           image:
-            "https://i.scdn.co/image/ab67706c0000bebb9946720997b8d6c50f7f216a",
+            "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
         },
       ],
       playlistsImage: [
         "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
         "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
-        "https://i.scdn.co/image/ab67706c0000bebb9946720997b8d6c50f7f216a",
       ],
     };
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../style.scss";
 @import "../Squares/Squares.style.scss";
 @import "../Modal/Modal.style.scss";
@@ -187,7 +192,7 @@ export default {
 
 .spotify-pl-card {
   height: 200px;
-  width: 100%;
+  width: 520px;
   border-radius: 6px;
   margin-bottom: 30px;
   background: $full-background-color;
@@ -201,20 +206,22 @@ export default {
 
 .spotify-pl-container {
   max-width: 450px;
-  //height: 150px;
   height: auto;
-  background: $primary-color;
   padding: 20px 0;
 }
 
 .spotify-pl-title {
   font-weight: 400 !important;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 .spotify-pl-desc {
+  margin-top: 16px;
   font-weight: 200 !important;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  width: 260px;
+  text-align: left;
 }
 
 .card-pl-art {
@@ -223,15 +230,10 @@ export default {
   background: $white-color;
   margin-right: 30px;
   border-radius: 6px 0 0 6px;
-  /*  ISSO VAI SAIR DAQUI E VAI PARA A DIV,
-      POIS SERÁ USADO UM V-FOR PRA ITERAR SOBRE
-      A LISTA DE OBJETOS CRIADA. */
   background: url(https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b);
   background-size: 202px 202px;
   background-position: center;
 }
-
-// DELETAR DEPOIS
 
 .card-pl-art2 {
   height: 200px;
