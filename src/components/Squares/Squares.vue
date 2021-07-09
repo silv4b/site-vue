@@ -88,6 +88,7 @@
 
 <script>
 import Modal from "../Modal/Modal.vue";
+//import * as Square from "./Squares";
 
 export default {
   components: {
