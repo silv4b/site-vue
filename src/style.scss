@@ -5,6 +5,23 @@ $primary-color: #202024;
 $secondary-color: #8b8b8d;
 $full-background-color: #111114;
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $full-background-color;
+  padding: 5px !important;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $white-color;
+  border-radius: 10px !important;
+  margin-right: 5px !important;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -45,6 +62,12 @@ $full-background-color: #111114;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 992px) {
+  .modal__dialog{
+    width: 600px !important;
+  }
 }
 
 @media only screen and (max-device-width: 640px) {
