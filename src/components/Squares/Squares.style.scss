@@ -1,3 +1,5 @@
+// SQUARE (INDEX) STYLES
+
 .spotify-button {
   background-color: $primary-color;
   margin: 20px;
@@ -73,7 +75,7 @@
   height: 100px;
   border-radius: 8px;
   background-color: $primary-color;
-  transition: 0.17s ease-in;
+  transition: 0.2s ease-in-out;
   margin: 20px;
   cursor: pointer;
 }
@@ -85,6 +87,7 @@
   .social_icon_style {
     color: $primary-color;
   }
+  transition: 0.2s ease-in-out;
 }
 
 .social_icon_style {

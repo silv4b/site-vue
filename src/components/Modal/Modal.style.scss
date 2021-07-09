@@ -1,3 +1,5 @@
+// MODAL STYLES
+
 .modal {
   position: fixed;
   top: 0;
@@ -26,7 +28,13 @@
     flex-direction: column;
     z-index: 2;
     @media screen and (max-width: 992px) {
-      width: 90%;
+      width: 600px !important;
+      @media screen and (max-width: 768px) {
+        width: 350px !important;
+      }
+      @media screen and (max-width: 419px) {
+        width: 290px !important;
+      }
     }
   }
   &__close {
@@ -35,9 +43,8 @@
   }
   &__header {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px 20px 10px;
+    align-items: center !important;
+    justify-content: space-around !important;
   }
   &__body {
     padding: 10px 20px 10px;

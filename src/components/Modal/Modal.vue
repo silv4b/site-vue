@@ -41,6 +41,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style.scss";
+@import "../../style.breakpoints.scss";
+//@import "../Squares/Squares.style.scss";
 @import "../Modal/Modal.style.scss";
 
 .modal {

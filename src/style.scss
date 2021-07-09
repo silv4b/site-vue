@@ -1,3 +1,5 @@
+// GENERAL STYLES
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 $white-color: #f5f5f5;
@@ -14,7 +16,7 @@ $full-background-color: #111114;
   background: $full-background-color;
   padding: 5px !important;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: $white-color;
@@ -41,6 +43,7 @@ $full-background-color: #111114;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease-in-out;
 }
 
 .container {
@@ -62,42 +65,4 @@ $full-background-color: #111114;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-}
-
-@media only screen and (max-width: 992px) {
-  .modal__dialog{
-    width: 600px !important;
-  }
-}
-
-@media only screen and (max-device-width: 640px) {
-  .master-border {
-    margin-top: 5vh;
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (max-device-width: 419px) {
-  .spotify-button {
-    width: 240px !important;
-  }
-
-  .spotify-pl-title,
-  .spotify-pl-desc {
-    display: none;
-  }
-
-  .spotify-pl-card {
-    width: 200px !important;
-  }
-
-  .card-pl-art,
-  .card-pl-art2 {
-    margin-right: 0 !important;
-    border-radius: 6px !important;
-  }
-
-  .modal__header {
-    padding: 20px 60px 10px !important;
-  }
 }
