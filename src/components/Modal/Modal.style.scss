@@ -21,7 +21,7 @@
   &__dialog {
     position: relative;
     width: 600px;
-    background-color: #ffffff;
+    background-color: $primary-color;
     border-radius: 5px;
     margin: 50px auto;
     display: flex;
@@ -42,6 +42,7 @@
     height: 30px;
   }
   &__header {
+    margin-top: 15px;
     display: flex;
     align-items: center !important;
     justify-content: space-around !important;
