@@ -77,9 +77,7 @@
       <div class="container">
         <div class="text-bottom">{{ texts[2] }}</div>
         <div class="logo-img">
-          <img
-            src="https://raw.githubusercontent.com/silv4b/site-vue/92c89c80d4b049c6862a115508e4ad0eb92f2d93/src/assets/logo.svg?token=AEJJ7YTOFWRVDLU7Q6NW3GDA5QPJC"
-          />
+          <img src="@/assets/logo.svg" />
         </div>
       </div>
     </div>
@@ -110,6 +108,8 @@ export default {
   },
   data() {
     return {
+      imageFooter:
+        "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO",
       classCard: "social center",
       classSocialIcons: "social_icon_style",
       texts: [
