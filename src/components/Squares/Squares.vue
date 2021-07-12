@@ -47,7 +47,7 @@
             <h1>Playlists</h1>
           </template>
           <template v-slot:body>
-            <div class="container a90">
+            <div class="container font-card-color">
               <div @click="spotifyLink1()" class="flex left spotify-pl-card">
                 <div class="card-pl-art"></div>
                 <div class="spotify-pl-container">
@@ -86,7 +86,6 @@
 
 <script>
 import Modal from "../Modal/Modal.vue";
-//import * as Square from "./Squares";
 
 export default {
   components: {
@@ -185,66 +184,4 @@ export default {
 @import "../../style.breakpoints.scss";
 @import "../Squares/Squares.style.scss";
 @import "../Modal/Modal.style.scss";
-
-.a90 {
-  color: whitesmoke;
-  font-weight: 200;
-  display: flex;
-}
-
-.spotify-pl-card {
-  height: 200px;
-  width: 520px;
-  border-radius: 6px;
-  margin-bottom: 30px;
-  background: $full-background-color;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.spotify-pl-card:hover {
-  transform: scale(1.04);
-}
-
-.spotify-pl-container {
-  max-width: 450px;
-  height: auto;
-  padding: 20px 0;
-}
-
-.spotify-pl-title {
-  font-weight: 400 !important;
-  font-size: 1.2rem;
-  text-align: left;
-}
-
-.spotify-pl-desc {
-  margin-top: 16px;
-  font-weight: 200 !important;
-  font-size: 0.8rem;
-  width: 260px;
-  text-align: left;
-}
-
-.card-pl-art {
-  height: 200px;
-  width: 200px;
-  background: $white-color;
-  margin-right: 30px;
-  border-radius: 6px 0 0 6px;
-  background: url(https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b);
-  background-size: 202px 202px;
-  background-position: center;
-}
-
-.card-pl-art2 {
-  height: 200px;
-  width: 200px;
-  background: $white-color;
-  margin-right: 30px;
-  border-radius: 6px 0 0 6px;
-  background: url(https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3);
-  background-size: 202px 202px;
-  background-position: center;
-}
 </style>
