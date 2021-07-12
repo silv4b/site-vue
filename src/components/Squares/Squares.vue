@@ -78,7 +78,7 @@
         <div class="text-bottom">{{ texts[2] }}</div>
         <div class="logo-img">
           <img
-            src="https://raw.githubusercontent.com/silv4b/site-vue/main/src/assets/logo.svg?token=AEJJ7YTFN45YRGXULCXQO5TA5NOSQ"
+            src="https://raw.githubusercontent.com/silv4b/site-vue/92c89c80d4b049c6862a115508e4ad0eb92f2d93/src/assets/logo.svg?token=AEJJ7YTOFWRVDLU7Q6NW3GDA5QPJC"
           />
         </div>
       </div>
