@@ -1,11 +1,5 @@
 // SQUARE (INDEX) STYLES
 
-*,
-a,
-i {
-  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto !important;
-}
-
 .spotify-button {
   background-color: $primary-color;
   margin: 20px;
@@ -13,7 +7,7 @@ i {
   border-radius: 10px;
   width: 380px;
   transition: 0.2s ease-in-out;
-  //cursor: pointer;
+  cursor: pointer;
 }
 
 .change_later {
@@ -83,7 +77,7 @@ i {
   background-color: $primary-color;
   transition: 0.2s ease-in-out;
   margin: 20px;
-  //cursor: pointer;
+  cursor: pointer;
 }
 
 .social:hover {

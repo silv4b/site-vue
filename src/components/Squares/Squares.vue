@@ -14,21 +14,12 @@
 
       <!-- REDES SOCIAIS -->
       <div class="container-row">
-        <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard">
+        <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard" @click="openLinkDiv(sl.href)">
           <a :href="sl.href" target="_blank" :class="classSocialIcons">
             <i :class="sl.iclass"></i>
           </a>
         </div>
       </div>
-
-      <!-- PLAYLIST SPOTIFY 
-      <div class="container">
-        <div type="button" @click="spotifyLink()" class="spotify-button">
-          <div class="container-row">
-            <a class="social_icon_style_2"><i class="bx bxl-spotify"></i> </a>
-          </div>
-        </div>
-      </div> -->
 
       <!-- MODAL PLAYLISTS SPOTIFY -->
       <div class="container">
@@ -104,6 +95,9 @@ export default {
     spotifyLink2: function () {
       window.open(this.playlists[1].link, "_blank");
     },
+    openLinkDiv: function (link) {
+      window.open(link, "_blank");
+    }
   },
   data() {
     return {
@@ -143,9 +137,9 @@ export default {
         },
         {
           id: 5,
-          social: "Gitlab",
-          href: "https://gitlab.com/silv4b",
-          iclass: "bx bxl-gitlab",
+          social: "VS Code Marketplace",
+          href: "https://marketplace.visualstudio.com/items?itemName=silv4b.silv4b-dark-theme",
+          iclass: "bx bxl-visual-studio",
         },
         {
           id: 6,
