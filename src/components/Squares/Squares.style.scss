@@ -157,17 +157,15 @@
 }
 
 .spotify-pl-title {
-  font-weight: 500;
-  color: var(--secondary-color);
+  font-weight: 400 !important;
   font-size: 1.2rem;
   text-align: left;
 }
 
 .spotify-pl-desc {
   margin-top: 16px;
-  font-weight: 400;
-  font-size: 0.85rem;
-  color: var(--secondary-color);
+  font-weight: 200 !important;
+  font-size: 0.8rem;
   width: 260px;
   text-align: left;
 }
