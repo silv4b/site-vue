@@ -48,7 +48,7 @@ export default {
 
     getMediaPreference() {
       const hasDarkPreference = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: light)"
       ).matches;
       if (hasDarkPreference) {
         return "dark-theme";
