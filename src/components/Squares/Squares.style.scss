@@ -1,7 +1,7 @@
 // SQUARE (INDEX) STYLES
 
 .spotify-button {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   margin: 20px;
   height: auto;
   border-radius: 10px;
@@ -21,12 +21,12 @@
 
 .spotify-button:hover {
   transform: scale(1.2);
-  background-color: $white-color;
+  background-color: var(--white-color);
   .change_later {
-    color: $primary-color;
+    color: var(--primary-color);
   }
   .social_icon_style_2 {
-    color: $primary-color;
+    color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
   border: 6px;
   border-radius: 100%;
   border-style: solid;
-  border-color: $primary-color;
+  border-color: var(--primary-color);
   transition: 0.2s ease-in-out;
 }
 
@@ -59,13 +59,13 @@
   margin: 10px 10px;
   font-size: 1.5rem;
   font-weight: 400;
-  color: $white-color;
+  color: var(--white-color);
 }
 
 .text-job {
   margin: 10px;
   font-size: 1rem;
-  color: $secondary-color;
+  color: var(--secondary-color);
   font-weight: 300;
 }
 
@@ -74,7 +74,7 @@
   width: 100px;
   height: 100px;
   border-radius: 8px;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   transition: 0.2s ease-in-out;
   margin: 20px;
   cursor: pointer;
@@ -83,9 +83,9 @@
 .social:hover {
   transform: scale(1.2);
   border-radius: 10px !important;
-  background-color: $white-color;
+  background-color: var(--white-color);
   .social_icon_style {
-    color: $primary-color;
+    color: var(--primary-color);
   }
   transition: 0.2s ease-in-out;
 }
@@ -96,7 +96,7 @@
   align-items: center;
   width: max-content;
   font-size: 3rem;
-  color: $white-color;
+  color: var(--white-color);
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
@@ -107,7 +107,7 @@
   align-items: center;
   width: max-content;
   font-size: 2rem;
-  color: $white-color;
+  color: var(--white-color);
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
@@ -121,7 +121,7 @@
   margin: 30px;
   font-size: 0.9rem;
   font-weight: 300;
-  color: $white-color;
+  color: var(--white-color);
   letter-spacing: 1px;
 }
 
@@ -141,7 +141,7 @@
   width: 520px;
   border-radius: 6px;
   margin-bottom: 30px;
-  background: $full-background-color;
+  background: var(--full-background-color);
   transition: 0.2s ease-in-out;
   //cursor: pointer;
 }
@@ -173,7 +173,7 @@
 .card-pl-art {
   height: 200px;
   width: 200px;
-  background: $white-color;
+  background: var(--white-color);
   margin-right: 30px;
   border-radius: 6px 0 0 6px;
   background: url(https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b);
@@ -184,10 +184,14 @@
 .card-pl-art2 {
   height: 200px;
   width: 200px;
-  background: $white-color;
+  background: var(--white-color);
   margin-right: 30px;
   border-radius: 6px 0 0 6px;
   background: url(https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3);
   background-size: 202px 202px;
   background-position: center;
+}
+
+.toggle {
+  margin: 0 20px 20px 20px;
 }

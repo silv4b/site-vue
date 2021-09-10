@@ -1,6 +1,10 @@
 <template>
   <div class="master-border">
     <div class="container">
+      <!-- TOGGLE -->
+      <div class="container toggle">
+        <Toggle />
+      </div>
       <!--  PERFIL -->
       <div class="container">
         <div class="profile"></div>
@@ -14,7 +18,12 @@
 
       <!-- REDES SOCIAIS -->
       <div class="container-row">
-        <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard" @click="openLinkDiv(sl.href)">
+        <div
+          v-for="sl in socialList"
+          v-bind:key="sl.id"
+          :class="classCard"
+          @click="openLinkDiv(sl.href)"
+        >
           <a :href="sl.href" target="_blank" :class="classSocialIcons">
             <i :class="sl.iclass"></i>
           </a>
@@ -77,10 +86,12 @@
 
 <script>
 import Modal from "../Modal/Modal.vue";
+import Toggle from "../Toggle/Toggle.vue";
 
 export default {
   components: {
     Modal,
+    Toggle
   },
   methods: {
     spotifyLink: function () {
@@ -97,7 +108,7 @@ export default {
     },
     openLinkDiv: function (link) {
       window.open(link, "_blank");
-    }
+    },
   },
   data() {
     return {

@@ -21,7 +21,7 @@
   &__dialog {
     position: relative;
     width: 600px;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     border-radius: 5px;
     margin: 50px auto;
     display: flex;
@@ -107,7 +107,7 @@ button {
 
 h1,
 p {
-  color: $white-color;
+  color: var(--white-color);
 }
 
 h1 {
