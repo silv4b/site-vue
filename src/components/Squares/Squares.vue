@@ -149,7 +149,7 @@ export default {
         {
           id: 5,
           social: "VS Code Marketplace",
-          href: "https://marketplace.visualstudio.com/items?itemName=silv4b.silv4b-dark-theme",
+          href: "https://marketplace.visualstudio.com/publishers/silv4b",
           iclass: "bx bxl-visual-studio",
         },
         {
