@@ -2,7 +2,7 @@
   <div class="master-border">
     <div class="container">
       <!-- TOGGLE -->
-      <div class="container">
+      <div class="container toggle">
         <Toggle />
       </div>
       <!--  PERFIL -->
@@ -13,7 +13,7 @@
       <!-- TEXTOS -->
       <div class="container">
         <div class="text-name">{{ texts[0] }}</div>
-        <div class="text-job">{{ texts[1] }}</div>
+        <div class="text-job">{{ job_text }}</div>
       </div>
 
       <!-- REDES SOCIAIS -->
@@ -87,11 +87,14 @@
 <script>
 import Modal from "../Modal/Modal.vue";
 import Toggle from "../Toggle/Toggle.vue";
+import { about } from "../../../properties.js";
 
 export default {
   components: {
     Modal,
-    Toggle
+    Toggle,
+    /* eslint-disable vue/no-unused-components */
+    about,
   },
   methods: {
     spotifyLink: function () {
@@ -112,6 +115,7 @@ export default {
   },
   data() {
     return {
+      job_text: about.person.job,
       imageFooter:
         "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO",
       classCard: "social center",
