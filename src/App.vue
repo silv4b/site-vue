@@ -1,21 +1,27 @@
 <template>
   <div id="app">
+    <vue-scroll-progress-bar
+      height="0.2rem"
+      zIndex="999"
+      backgroundColor="linear-gradient(to right, #fff, #fff)"
+    />
     <div class="container">
-      <!-- <Toggle /> -->
       <Squares />
     </div>
   </div>
 </template>
 
 <script>
+//TODO: Criar lógica pra alterar a variável 'backgroundColor' de acordo com o tema da página.
+
 import Squares from "./components/Squares/Squares.vue";
-//import Toggle from "./components/Toggle/Toggle.vue";
+import { VueScrollProgressBar } from "@guillaumebriday/vue-scroll-progress-bar";
 
 export default {
   name: "App",
   components: {
     Squares,
-    //Toggle,
+    VueScrollProgressBar,
   },
 };
 </script>
