@@ -2,7 +2,7 @@
   <div class="master-border">
     <div class="container">
       <!-- TOGGLE -->
-      <div class="container toggle">
+      <div class="container">
         <Toggle />
       </div>
       <!--  PERFIL -->

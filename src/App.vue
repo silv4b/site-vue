@@ -23,12 +23,4 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
-.container {
-  z-index: 99 !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 </style>
