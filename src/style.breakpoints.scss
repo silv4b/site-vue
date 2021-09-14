@@ -3,6 +3,10 @@
         margin-top: 5vh;
         margin-bottom: 50px;
     }
+
+    .profile {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -24,6 +28,10 @@
     .modal__header {
         padding: 20px 60px 10px !important;
     }
+
+    .profile {
+        margin-top: 30px !important;
+    }
 }
 
 @media screen and (max-width: 419px) {
@@ -33,5 +41,9 @@
 
     .modal__dialog {
         width: 290px !important;
+    }
+
+    .profile {
+        margin-top: 30px;
     }
 }

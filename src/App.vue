@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="container">
-      <!-- <Toggle /> -->
       <Squares />
     </div>
   </div>
@@ -9,13 +8,11 @@
 
 <script>
 import Squares from "./components/Squares/Squares.vue";
-//import Toggle from "./components/Toggle/Toggle.vue";
 
 export default {
   name: "App",
   components: {
     Squares,
-    //Toggle,
   },
 };
 </script>

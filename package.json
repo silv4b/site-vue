@@ -11,6 +11,7 @@
     "add-commit": "npm run add && git-cz"
   },
   "dependencies": {
+    "@guillaumebriday/vue-scroll-progress-bar": "^1.0.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },

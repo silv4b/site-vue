@@ -10,7 +10,7 @@
 }
 
 :root.dark-theme {
-  --white-color: #383838;
+  --white-color: #292929;
   --primary-color: #f3f3f3;
   --secondary-color: #262626;
   --full-background-color: #dcdcdc;
@@ -66,6 +66,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1 !important;
 }
 
 .master-border {
