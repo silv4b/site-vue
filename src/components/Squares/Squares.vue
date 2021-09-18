@@ -13,7 +13,7 @@
       <!-- TEXTOS -->
       <div class="container">
         <div class="text-name">{{ texts[0] }}</div>
-        <div class="text-job">{{ job_text }}</div>
+        <div class="text-job">{{ person.job }}</div>
       </div>
 
       <!-- REDES SOCIAIS -->
@@ -87,7 +87,7 @@
 <script>
 import Modal from "../Modal/Modal.vue";
 import Toggle from "../Toggle/Toggle.vue";
-import { about } from "../../../properties.js";
+import { about, newSocialList, social } from "../../../properties.js";
 
 export default {
   components: {
@@ -95,6 +95,8 @@ export default {
     Toggle,
     /* eslint-disable vue/no-unused-components */
     about,
+    newSocialList,
+    social,
   },
   methods: {
     spotifyLink: function () {
@@ -115,7 +117,8 @@ export default {
   },
   data() {
     return {
-      job_text: about.person.job,
+      person: about.person,
+      socialList: social,
       imageFooter:
         "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO",
       classCard: "social center",
@@ -124,44 +127,6 @@ export default {
         "Bruno Silva | @silv4b",
         "User Interface Designer",
         "Feito com amor 👨‍💻",
-      ],
-      socialList: [
-        {
-          id: 1,
-          social: "LinkedIn",
-          href: "https://www.linkedin.com/in/silv4b/",
-          iclass: "bx bxl-linkedin-square",
-        },
-        {
-          id: 2,
-          social: "Instagram",
-          href: "https://www.instagram.com/uisilvab/",
-          iclass: "bx bxl-instagram",
-        },
-        {
-          id: 3,
-          social: "Figma",
-          href: "https://www.figma.com/@silv4b",
-          iclass: "bx bxl-figma",
-        },
-        {
-          id: 4,
-          social: "Github",
-          href: "https://github.com/silv4b",
-          iclass: "bx bxl-github",
-        },
-        {
-          id: 5,
-          social: "VS Code Marketplace",
-          href: "https://marketplace.visualstudio.com/publishers/silv4b",
-          iclass: "bx bxl-visual-studio",
-        },
-        {
-          id: 6,
-          social: "Email",
-          href: "mailto:brunoxbkd@gmail.com",
-          iclass: "bx bx-mail-send",
-        },
       ],
       playlists: [
         {
