@@ -2,7 +2,7 @@
   <div class="master-border">
     <div class="container">
       <!-- TOGGLE -->
-      <div class="container">
+      <div class="container toggle">
         <Toggle />
       </div>
       <!--  PERFIL -->
@@ -12,8 +12,8 @@
 
       <!-- TEXTOS -->
       <div class="container">
-        <div class="text-name">{{ texts[0] }}</div>
-        <div class="text-job">{{ texts[1] }}</div>
+        <div class="text-name">{{ person.title }}</div>
+        <div class="text-job">{{ person.job }}</div>
       </div>
 
       <!-- REDES SOCIAIS -->
@@ -75,7 +75,7 @@
 
       <!-- TEXTO E LOGO -->
       <div class="container">
-        <div class="text-bottom">{{ texts[2] }}</div>
+        <div class="text-bottom">{{ person.desc }}</div>
         <div class="logo-img">
           <img src="@/assets/logo.svg" />
         </div>
@@ -87,11 +87,17 @@
 <script>
 import Modal from "../Modal/Modal.vue";
 import Toggle from "../Toggle/Toggle.vue";
+import { about, newSocialList, social, playlist } from "../../../properties.js";
 
 export default {
   components: {
     Modal,
-    Toggle
+    Toggle,
+    /* eslint-disable vue/no-unused-components */
+    about,
+    newSocialList,
+    social,
+    playlist,
   },
   methods: {
     spotifyLink: function () {
@@ -112,73 +118,13 @@ export default {
   },
   data() {
     return {
+      person: about.person,
+      socialList: social,
       imageFooter:
         "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO",
       classCard: "social center",
       classSocialIcons: "social_icon_style",
-      texts: [
-        "Bruno Silva | @silv4b",
-        "User Interface Designer",
-        "Feito com amor 👨‍💻",
-      ],
-      socialList: [
-        {
-          id: 1,
-          social: "LinkedIn",
-          href: "https://www.linkedin.com/in/silv4b/",
-          iclass: "bx bxl-linkedin-square",
-        },
-        {
-          id: 2,
-          social: "Instagram",
-          href: "https://www.instagram.com/uisilvab/",
-          iclass: "bx bxl-instagram",
-        },
-        {
-          id: 3,
-          social: "Figma",
-          href: "https://www.figma.com/@silv4b",
-          iclass: "bx bxl-figma",
-        },
-        {
-          id: 4,
-          social: "Github",
-          href: "https://github.com/silv4b",
-          iclass: "bx bxl-github",
-        },
-        {
-          id: 5,
-          social: "VS Code Marketplace",
-          href: "https://marketplace.visualstudio.com/publishers/silv4b",
-          iclass: "bx bxl-visual-studio",
-        },
-        {
-          id: 6,
-          social: "Email",
-          href: "mailto:brunoxbkd@gmail.com",
-          iclass: "bx bx-mail-send",
-        },
-      ],
-      playlists: [
-        {
-          id: 1,
-          nome: "🎵 Songs to not be sad",
-          link: "https://open.spotify.com/playlist/1sBicr7fa2fbPJlBNq6hCX",
-          image:
-            "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
-        },
-        {
-          id: 2,
-          nome: "🎶 Songs to not be sad 2.0",
-          link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
-          image:
-            "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
-        },
-      ],
-      playlistsImage: [
-        "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
-        "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
-      ],
+      playlists: playlist,
     };
   },
 };
