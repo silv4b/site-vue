@@ -1,10 +1,27 @@
 const about = {
     person: {
-        nome: "Bruno Silva",
-        apelido: "@Silv4b",
-        job: "User Interface Designer"
+        title: "Bruno Silva | @silv4b",
+        job: "User Interface Designer",
+        desc: "Feito com código 👨‍💻"
     }
 }
+
+const playlist = [
+    {
+        id: 1,
+        nome: "🎵 Songs to not be sad",
+        link: "https://open.spotify.com/playlist/1sBicr7fa2fbPJlBNq6hCX",
+        image:
+            "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
+    },
+    {
+        id: 2,
+        nome: "🎶 Songs to not be sad 2.0",
+        link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
+        image:
+            "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
+    },
+]
 
 const social = {
     LinkedIn: {
@@ -78,4 +95,4 @@ const newSocialList = [
     },
 ]
 
-export { about, newSocialList, social }
+export { about, newSocialList, social, playlist }

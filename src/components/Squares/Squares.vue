@@ -12,7 +12,7 @@
 
       <!-- TEXTOS -->
       <div class="container">
-        <div class="text-name">{{ texts[0] }}</div>
+        <div class="text-name">{{ person.title }}</div>
         <div class="text-job">{{ person.job }}</div>
       </div>
 
@@ -75,7 +75,7 @@
 
       <!-- TEXTO E LOGO -->
       <div class="container">
-        <div class="text-bottom">{{ texts[2] }}</div>
+        <div class="text-bottom">{{ person.desc }}</div>
         <div class="logo-img">
           <img src="@/assets/logo.svg" />
         </div>
@@ -87,7 +87,7 @@
 <script>
 import Modal from "../Modal/Modal.vue";
 import Toggle from "../Toggle/Toggle.vue";
-import { about, newSocialList, social } from "../../../properties.js";
+import { about, newSocialList, social, playlist } from "../../../properties.js";
 
 export default {
   components: {
@@ -97,6 +97,7 @@ export default {
     about,
     newSocialList,
     social,
+    playlist,
   },
   methods: {
     spotifyLink: function () {
@@ -123,31 +124,7 @@ export default {
         "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO",
       classCard: "social center",
       classSocialIcons: "social_icon_style",
-      texts: [
-        "Bruno Silva | @silv4b",
-        "User Interface Designer",
-        "Feito com amor 👨‍💻",
-      ],
-      playlists: [
-        {
-          id: 1,
-          nome: "🎵 Songs to not be sad",
-          link: "https://open.spotify.com/playlist/1sBicr7fa2fbPJlBNq6hCX",
-          image:
-            "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
-        },
-        {
-          id: 2,
-          nome: "🎶 Songs to not be sad 2.0",
-          link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
-          image:
-            "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
-        },
-      ],
-      playlistsImage: [
-        "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
-        "https://i.scdn.co/image/ab67706c0000bebb86aa1b28e2f2d22a9811222b",
-      ],
+      playlists: playlist,
     };
   },
 };
