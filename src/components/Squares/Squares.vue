@@ -87,7 +87,13 @@
 <script>
 import Modal from "../Modal/Modal.vue";
 import Toggle from "../Toggle/Toggle.vue";
-import { about, newSocialList, social, playlist } from "../../../properties.js";
+import {
+  about,
+  newSocialList,
+  social,
+  playlist,
+  imageFooter,
+} from "../../../properties.js";
 
 export default {
   components: {
@@ -98,14 +104,9 @@ export default {
     newSocialList,
     social,
     playlist,
+    imageFooter,
   },
   methods: {
-    spotifyLink: function () {
-      window.open(
-        "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm?si=ad49b6d20e134832&nd=1",
-        "_blank"
-      );
-    },
     spotifyLink1: function () {
       window.open(this.playlists[0].link, "_blank");
     },
@@ -120,11 +121,10 @@ export default {
     return {
       person: about.person,
       socialList: social,
-      imageFooter:
-        "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO",
+      imageFooter: imageFooter,
+      playlists: playlist,
       classCard: "social center",
       classSocialIcons: "social_icon_style",
-      playlists: playlist,
     };
   },
 };
