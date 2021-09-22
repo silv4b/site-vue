@@ -4,16 +4,34 @@
 
 ## Project setup  
 
+Preencher o arquivo `properties.js` somente.
+
+## Install Dependencies  
+
 ```bash
 npm install
 ```
 
 ### Compiles and hot-reloads for development  
 
+Ambos
+
 ```bash
 npm run serve
 ```
 
-### Customize configuration  
+Windows
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```bash
+# Powershell
+run.bat
+
+# CMD
+./run.bat
+```
+
+Linux
+
+```bash
+$ ./run.bat
+```
