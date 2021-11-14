@@ -23,10 +23,10 @@ npm run serve
 Windows
 
 ```bash
-# Powershell
+# CMD
 run.bat
 
-# CMD
+# PowerShell
 ./run.bat
 ```
 
