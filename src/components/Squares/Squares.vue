@@ -68,6 +68,15 @@
                   </div>
                 </div>
               </div>
+              <div @click="spotifyLink3()" class="flex left spotify-pl-card">
+                <div class="card-pl-art3"></div>
+                <div class="spotify-pl-container">
+                  <div class="spotify-pl-title">🎙️ Songs to not be sad 3.0 MF</div>
+                  <div class="spotify-pl-desc">
+                    Versão 3.0 MotherFucker Mode!
+                  </div>
+                </div>
+              </div>
             </div>
           </template>
         </modal>
@@ -112,6 +121,9 @@ export default {
     },
     spotifyLink2: function () {
       window.open(this.playlists[1].link, "_blank");
+    },
+    spotifyLink3: function () {
+      window.open(this.playlists[2].link, "_blank");
     },
     openLinkDiv: function (link) {
       window.open(link, "_blank");

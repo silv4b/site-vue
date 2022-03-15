@@ -1,7 +1,7 @@
 const about = {
     person: {
         title: "Bruno Silva | @silv4b",
-        job: "User Interface Designer",
+        job: "Developer and UI Designer",
         desc: "Feito com código 👨‍💻"
     }
 }
@@ -20,6 +20,13 @@ const playlist = [
         link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
         image:
             "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
+    },
+    {
+        id: 3,
+        nome: "🎙️ Songs to not be sad 3.0 MF",
+        link: "https://open.spotify.com/playlist/2NdUEXKA08hbaD7ootIQ3h",
+        image:
+            "https://i.scdn.co/image/ab67706c0000bebb50f8e9203260aa5456ab630e",
     },
 ]
 
