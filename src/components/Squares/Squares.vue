@@ -1,144 +1,109 @@
 <template>
-  <div class="master-border">
-    <div class="container">
-      <!-- TOGGLE -->
-      <div class="container toggle">
-        <Toggle />
-      </div>
-      <!--  PERFIL -->
-      <div class="container">
-        <div class="profile"></div>
-      </div>
+	<div class="master-border">
+		<div class="container">
+			<!-- TOGGLE -->
+			<div class="container toggle">
+				<Toggle />
+			</div>
+			<!--  PERFIL -->
+			<div class="container">
+				<div class="profile"></div>
+			</div>
 
-      <!-- TEXTOS -->
-      <div class="container">
-        <div class="text-name">{{ person.title }}</div>
-        <div class="text-job">{{ person.job }}</div>
-      </div>
+			<!-- TEXTOS -->
+			<div class="container">
+				<div class="text-name">{{ person.title }}</div>
+				<div class="text-job">{{ person.job }}</div>
+			</div>
 
-      <!-- REDES SOCIAIS -->
-      <div class="container-row">
-        <div
-          v-for="sl in socialList"
-          v-bind:key="sl.id"
-          :class="classCard"
-          @click="openLinkDiv(sl.href)"
-        >
-          <a :href="sl.href" target="_blank" :class="classSocialIcons">
-            <i :class="sl.iclass"></i>
-          </a>
-        </div>
-      </div>
+			<!-- REDES SOCIAIS -->
+			<div class="container-row">
+				<div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard" @click="openLink(sl.href)">
+					<a :href="sl.href" target="_blank" :class="classSocialIcons">
+						<i :class="sl.iclass"></i>
+					</a>
+				</div>
+			</div>
 
-      <!-- MODAL PLAYLISTS SPOTIFY -->
-      <div class="container">
-        <div
-          type="button"
-          @click="$refs.modalName.openModal()"
-          class="spotify-button"
-        >
-          <div class="container-row">
-            <a class="social_icon_style_2"><i class="bx bxs-playlist"></i> </a>
-            <div class="change_later"></div>
-          </div>
-        </div>
-        <modal ref="modalName">
-          <template v-slot:header>
-            <h1>Playlists</h1>
-          </template>
-          <template v-slot:body>
-            <div class="container font-card-color">
-              <div @click="spotifyLink1()" class="flex left spotify-pl-card">
-                <div class="card-pl-art"></div>
-                <div class="spotify-pl-container">
-                  <div class="spotify-pl-title">🎵 Songs to not be sad</div>
-                  <div class="spotify-pl-desc">
-                    Uma playlist bem aleatória pra você curtir sem medo de ser
-                    feliz, variando desde de rap até theme songs de animes.
-                  </div>
-                </div>
-              </div>
-              <div @click="spotifyLink2()" class="flex left spotify-pl-card">
-                <div class="card-pl-art2"></div>
-                <div class="spotify-pl-container">
-                  <div class="spotify-pl-title">🎶 Songs to not be sad 2.0</div>
-                  <div class="spotify-pl-desc">
-                    Versão 2.0 da playlist anterior, mais aleatória, mas
-                    interessante, só vai!
-                  </div>
-                </div>
-              </div>
-              <div @click="spotifyLink3()" class="flex left spotify-pl-card">
-                <div class="card-pl-art3"></div>
-                <div class="spotify-pl-container">
-                  <div class="spotify-pl-title">🎙️ Songs to not be sad 3.0 MF</div>
-                  <div class="spotify-pl-desc">
-                    Versão 3.0 MotherFucker Mode!
-                  </div>
-                </div>
-              </div>
-            </div>
-          </template>
-        </modal>
-      </div>
+			<!-- MODAL PLAYLISTS SPOTIFY -->
+			<div class="container">
+				<div type="button" @click="$refs.modalName.openModal()" class="spotify-button">
+					<div class="container-row">
+						<a class="social_icon_style_2">
+							<i class="bx bxs-playlist"></i>
+						</a>
+						<div class="change_later"></div>
+					</div>
+				</div>
+				<modal ref="modalName">
+					<template v-slot:header>
+						<h1>Playlists</h1>
+					</template>
+					<template v-slot:body>
+						<div class="container font-card-color">
+							<div
+								v-for="pl in playList"
+								v-bind:key="pl.id"
+								class="flex left spotify-pl-card"
+								@click="openLink(pl.link)"
+							>
+								<div :class="pl.cover"></div>
+								<div class="spotify-pl-container">
+									<div class="spotify-pl-title">{{ pl.nome }}</div>
+									<div class="spotify-pl-desc">{{ pl.desc }}</div>
+								</div>
+							</div>
+						</div>
+					</template>
+				</modal>
+			</div>
 
-      <!-- TEXTO E LOGO -->
-      <div class="container">
-        <div class="text-bottom">{{ person.desc }}</div>
-        <div class="logo-img">
-          <img src="@/assets/logo.svg" />
-        </div>
-      </div>
-    </div>
-  </div>
+			<!-- TEXTO E LOGO -->
+			<div class="container">
+				<div class="text-bottom">{{ person.desc }}</div>
+				<div class="logo-img">
+					<img src="@/assets/logo.svg" />
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 import Modal from "../Modal/Modal.vue";
 import Toggle from "../Toggle/Toggle.vue";
 import {
-  about,
-  newSocialList,
-  social,
-  playlist,
-  imageFooter,
+	about,
+	social,
+	spotifyplaylists,
+	imageFooter,
 } from "../../../properties.js";
 
 export default {
-  components: {
-    Modal,
-    Toggle,
-    /* eslint-disable vue/no-unused-components */
-    about,
-    newSocialList,
-    social,
-    playlist,
-    imageFooter,
-  },
-  methods: {
-    spotifyLink1: function () {
-      window.open(this.playlists[0].link, "_blank");
-    },
-    spotifyLink2: function () {
-      window.open(this.playlists[1].link, "_blank");
-    },
-    spotifyLink3: function () {
-      window.open(this.playlists[2].link, "_blank");
-    },
-    openLinkDiv: function (link) {
-      window.open(link, "_blank");
-    },
-  },
-  data() {
-    return {
-      person: about.person,
-      socialList: social,
-      imageFooter: imageFooter,
-      playlists: playlist,
-      classCard: "social center",
-      classSocialIcons: "social_icon_style",
-    };
-  },
+	components: {
+		Modal,
+		Toggle,
+		/* eslint-disable vue/no-unused-components */
+		about,
+		social,
+		spotifyplaylists,
+		imageFooter,
+	},
+	methods: {
+		openLink: function (link) {
+			window.open(link, "_blank");
+		}
+	},
+	data() {
+		return {
+			person: about.person,
+			playList: spotifyplaylists,
+			socialList: social,
+			imageFooter: imageFooter,
+			classCard: "social center",
+			classSocialIcons: "social_icon_style",
+		};
+	},
 };
 </script>
 
