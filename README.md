@@ -4,7 +4,17 @@
 
 ## Project setup  
 
-Preencher o arquivo `properties.js` somente.
+Preencher o arquivo `properties.js` somente.  
+
+Instalar o Vue3 e o Vue Service  
+
+```bash
+npm install -g @vue/cli
+```
+
+```bash
+npm i @vue/cli-service
+```
 
 ## Install Dependencies  
 
@@ -23,7 +33,7 @@ npm run serve
 Windows
 
 ```bash
-# CMD
+# cmd
 run.bat
 
 # PowerShell

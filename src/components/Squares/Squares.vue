@@ -9,7 +9,6 @@
       <div class="container">
         <div class="profile"></div>
       </div>
-
       <!-- TEXTOS -->
       <div class="container">
         <div class="text-name">{{ person.title }}</div>
