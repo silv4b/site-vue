@@ -91,11 +91,6 @@ export default {
   components: {
     Modal,
     Toggle,
-    /* eslint-disable vue/no-unused-components */
-    about,
-    social,
-    spotifyplaylists,
-    imageFooter,
   },
   methods: {
     openLink: function (link) {
