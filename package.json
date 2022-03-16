@@ -8,11 +8,14 @@
     "lint": "vue-cli-service lint",
     "add": "git add .",
     "commit": "git add . && git-cz",
-    "add-commit": "npm run add && git-cz"
+    "add-commit": "npm run add && git-cz",
+    "start": "node server.js"
   },
   "dependencies": {
     "@guillaumebriday/vue-scroll-progress-bar": "^1.0.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.3",
+    "serve-static": "^1.14.2",
     "vue": "^2.6.11"
   },
   "husky": {

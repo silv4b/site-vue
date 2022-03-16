@@ -30,7 +30,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: max-content;
+		//width: max-content;
+		width: auto;
+		white-space: nowrap;
 		font-size: 2rem;
 		text-decoration: none;
 		transition: 0.2s ease-in-out;
@@ -92,7 +94,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: max-content;
+	//width: max-content;
+	width: auto;
+	white-space: nowrap;
 	font-size: 3rem;
 	color: var(--white-color);
 	text-decoration: none;
@@ -103,7 +107,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: max-content;
+	//width: max-content;
+	width: auto;
+	white-space: nowrap;
 	font-size: 2rem;
 	color: var(--white-color);
 	text-decoration: none;
