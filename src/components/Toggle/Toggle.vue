@@ -15,8 +15,8 @@
         zIndex="999"
       />
       <label for="checkbox" class="switch-label">
-        <span>🌙</span>
-        <span>☀️</span>
+          <span class="bx-spin">🌙</span>
+          <span class="bx-spin">☀️</span>
         <div
           class="switch-toggle"
           :class="{ 'switch-toggle-checked': userTheme === 'dark-theme' }"

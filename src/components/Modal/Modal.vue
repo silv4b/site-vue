@@ -3,8 +3,7 @@
     <div class="modal" v-if="show">
       <div class="modal__backdrop" @click="closeModal()" />
       <div class="modal__dialog">
-        <div class="modal__header">
-          <slot name="header" />
+        <div class="modal__header">          <slot name="header" />
         </div>
         <div class="modal__body">
           <slot name="body" />

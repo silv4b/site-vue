@@ -14,7 +14,6 @@
         <div class="text-name">{{ person.title }}</div>
         <div class="text-job">{{ person.job }}</div>
       </div>
-
       <!-- REDES SOCIAIS -->
       <div class="container-row">
         <div
@@ -24,11 +23,10 @@
           @click="openLink(sl.href)"
         >
           <a :href="sl.href" target="_blank" :class="classSocialIcons">
-            <i :class="sl.iclass"></i>
+            <i :class="sl.iclass" class="bx-spin-hover"></i>
           </a>
         </div>
       </div>
-
       <!-- MODAL PLAYLISTS SPOTIFY -->
       <div class="container">
         <div
@@ -36,7 +34,7 @@
           @click="$refs.modalName.openModal()"
           class="spotify-button"
         >
-          <div class="container-row">
+          <div class="container-row bx-spin-hover">
             <a class="social_icon_style_2">
               <i class="bx bxs-playlist"></i>
             </a>
@@ -65,11 +63,10 @@
           </template>
         </modal>
       </div>
-
       <!-- TEXTO E LOGO -->
       <div class="container">
         <div class="text-bottom">{{ person.desc }}</div>
-        <div class="logo-img">
+        <div class="logo-img bx-tada-hover">
           <img src="@/assets/logo.svg" />
         </div>
       </div>
