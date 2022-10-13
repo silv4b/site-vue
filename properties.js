@@ -27,6 +27,13 @@ const spotifyplaylists = {
 		image: "https://i.scdn.co/image/ab67706c0000bebb50f8e9203260aa5456ab630e",
 		desc: "Versão 3.0 MotherFucker Mode!",
 		cover: "card-pl-art3"
+	},
+	playlist_4: {
+		nome: "📣 Songs to not be sad 4.0",
+		link: "https://open.spotify.com/playlist/5xYe67lUKvlGRM0tzESNjG",
+		image: "https://i.scdn.co/image/ab67706c0000bebb6be35ec6d7552a56ff51d0a9",
+		desc: "Versão 4.0 Not Bad Mode!",
+		cover: "card-pl-art4"
 	}
 }
 

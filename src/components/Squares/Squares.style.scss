@@ -15,16 +15,18 @@
 	color: whitesmoke;
 }
 
-.spotify-button > div > a {
+.spotify-button>div>a {
 	margin: 10px;
 }
 
 .spotify-button:hover {
 	transform: scale(1.2);
 	background-color: var(--white-color);
+
 	.change_later {
 		color: var(--primary-color);
 	}
+
 	.social_icon_style_2 {
 		color: var(--primary-color);
 		display: flex;
@@ -83,9 +85,11 @@
 	transform: scale(1.2);
 	border-radius: 10px !important;
 	background-color: var(--white-color);
+
 	.social_icon_style {
 		color: var(--primary-color);
 	}
+
 	transition: 0.2s ease-in-out;
 }
 
@@ -205,6 +209,17 @@
 	margin-right: 0px;
 	border-radius: 6px 0 0 6px;
 	background: url(https://i.scdn.co/image/ab67706c0000bebb50f8e9203260aa5456ab630e);
+	background-size: 202px 202px;
+	background-position: center;
+}
+
+.card-pl-art4 {
+	height: 200px;
+	width: 200px;
+	background: var(--white-color);
+	margin-right: 0px;
+	border-radius: 6px 0 0 6px;
+	background: url(https://i.scdn.co/image/ab67706c0000bebb6be35ec6d7552a56ff51d0a9);
 	background-size: 202px 202px;
 	background-position: center;
 }
