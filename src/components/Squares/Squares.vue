@@ -53,7 +53,7 @@
                 class="flex left spotify-pl-card"
                 @click="openLink(pl.link)"
               >
-                <div :class="pl.cover"></div>
+                <div :class="pl.cover" :style="{ 'background-image': `url(${pl.image})` }"></div>
                 <div class="spotify-pl-container">
                   <div class="spotify-pl-title">{{ pl.nome }}</div>
                   <div class="spotify-pl-desc">{{ pl.desc }}</div>

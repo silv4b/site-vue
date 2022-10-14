@@ -19,21 +19,21 @@ const spotifyplaylists = {
 		link: "https://open.spotify.com/playlist/7FCrKytZs7U3Mm4WXWabVm",
 		image: "https://i.scdn.co/image/ab67706c0000bebb7490f9f68e3766e57c6fd4e3",
 		desc: "Versão 2.0 da playlist anterior, mais aleatória, mas interessante, só vai!",
-		cover: "card-pl-art2"
+		cover: "card-pl-art"
 	},
 	playlist_3: {
 		nome: "🎙️ Songs to not be sad 3.0 MF",
 		link: "https://open.spotify.com/playlist/2NdUEXKA08hbaD7ootIQ3h",
 		image: "https://i.scdn.co/image/ab67706c0000bebb50f8e9203260aa5456ab630e",
 		desc: "Versão 3.0 MotherFucker Mode!",
-		cover: "card-pl-art3"
+		cover: "card-pl-art"
 	},
 	playlist_4: {
 		nome: "📣 Songs to not be sad 4.0",
 		link: "https://open.spotify.com/playlist/5xYe67lUKvlGRM0tzESNjG",
 		image: "https://i.scdn.co/image/ab67706c0000bebb6be35ec6d7552a56ff51d0a9",
 		desc: "Versão 4.0 Not Bad Mode!",
-		cover: "card-pl-art4"
+		cover: "card-pl-art"
 	}
 }
 
