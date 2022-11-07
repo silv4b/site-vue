@@ -4,7 +4,7 @@ const about = {
 		job: "Developer and UI Designer",
 		desc: "Feito com código 👨‍💻"
 	}
-}
+};
 
 const spotifyplaylists = {
 	playlist_1: {
@@ -35,7 +35,7 @@ const spotifyplaylists = {
 		desc: "Versão 4.0 Not Bad Mode!",
 		cover: "card-pl-art"
 	}
-}
+};
 
 const social = {
 	LinkedIn: {
@@ -68,8 +68,8 @@ const social = {
 		href: "mailto:brunoxbkd@gmail.com",
 		iclass: "bx bx-mail-send",
 	}
-}
+};
 
 const imageFooter = "https://raw.githubusercontent.com/silv4b/site-vue/5f3230901f5a602e3b69ef8c81c3fd30b9109f5a/src/assets/logo.svg?token=AEJJ7YUABF7DUNQZ2LMALI3A5QZTO";
 
-export { about, social, spotifyplaylists, imageFooter }
+export { about, social, spotifyplaylists, imageFooter };

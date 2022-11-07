@@ -23,7 +23,7 @@
           @click="openLink(sl.href)"
         >
           <a :href="sl.href" target="_blank" :class="classSocialIcons">
-            <i :class="sl.iclass" class="bx-spin-hover"></i>
+            <i :class="sl.iclass"></i>
           </a>
         </div>
       </div>
@@ -34,7 +34,7 @@
           @click="$refs.modalName.openModal()"
           class="spotify-button"
         >
-          <div class="container-row bx-spin-hover">
+          <div class="container-row">
             <a class="social_icon_style_2">
               <i class="bx bxs-playlist"></i>
             </a>
@@ -53,7 +53,10 @@
                 class="flex left spotify-pl-card"
                 @click="openLink(pl.link)"
               >
-                <div :class="pl.cover" :style="{ 'background-image': `url(${pl.image})` }"></div>
+                <div
+                  :class="pl.cover"
+                  :style="{ 'background-image': `url(${pl.image})` }"
+                ></div>
                 <div class="spotify-pl-container">
                   <div class="spotify-pl-title">{{ pl.nome }}</div>
                   <div class="spotify-pl-desc">{{ pl.desc }}</div>
