@@ -1,195 +1,195 @@
 // SQUARE (INDEX) STYLES
 
 .spotify-button {
-	background-color: var(--primary-color);
-	margin: 20px;
-	height: auto;
-	border-radius: 10px;
-	width: 380px;
-	transition: 0.2s ease-in-out;
-	cursor: pointer;
+  background-color: var(--primary-color);
+  margin: 20px;
+  height: auto;
+  border-radius: 10px;
+  width: 380px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .change_later {
-	font-weight: 500;
-	color: whitesmoke;
+  font-weight: 500;
+  color: whitesmoke;
 }
 
-.spotify-button>div>a {
-	margin: 10px;
+.spotify-button > div > a {
+  margin: 10px;
 }
 
 .spotify-button:hover {
-	transform: scale(1.2);
-	background-color: var(--white-color);
+  transform: scale(1.2);
+  background-color: var(--white-color);
 
-	.change_later {
-		color: var(--primary-color);
-	}
+  .change_later {
+    color: var(--primary-color);
+  }
 
-	.social_icon_style_2 {
-		color: var(--primary-color);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		//width: max-content;
-		width: auto;
-		white-space: nowrap;
-		font-size: 2rem;
-		text-decoration: none;
-		transition: 0.2s ease-in-out;
-	}
+  .social_icon_style_2 {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //width: max-content;
+    width: auto;
+    white-space: nowrap;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
 }
 
 .profile {
-	margin-bottom: 0 !important;
-	width: 150px;
-	height: 150px;
-	background-image: url(https://avatars.githubusercontent.com/u/17997794?v=4);
-	background-size: 150px 150px;
-	border: 6px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: var(--primary-color);
-	transition: 0.2s ease-in-out;
-	z-index: -1 !important;
+  margin-bottom: 0 !important;
+  width: 150px;
+  height: 150px;
+  background-image: url(https://avatars.githubusercontent.com/u/17997794?v=4);
+  background-size: 150px 150px;
+  border: 6px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: var(--primary-color);
+  transition: 0.2s ease-in-out;
+  z-index: -1 !important;
 }
 
 .text-name {
-	margin-top: 30px !important;
-	margin: 10px 10px;
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: var(--white-color);
+  margin-top: 30px !important;
+  margin: 10px 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--white-color);
 }
 
 .text-job {
-	margin: 10px;
-	font-size: 1rem;
-	color: var(--secondary-color);
-	font-weight: 300;
+  margin: 10px;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 300;
 }
 
 .social {
-	display: flex;
-	width: 100px;
-	height: 100px;
-	border-radius: 8px;
-	background-color: var(--primary-color);
-	transition: 0.2s ease-in-out;
-	margin: 20px;
-	cursor: pointer;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  transition: 0.2s ease-in-out;
+  margin: 20px;
+  cursor: pointer;
 }
 
 .social:hover {
-	transform: scale(1.2);
-	border-radius: 10px !important;
-	background-color: var(--white-color);
+  transform: scale(1.2);
+  border-radius: 10px !important;
+  background-color: var(--white-color);
 
-	.social_icon_style {
-		color: var(--primary-color);
-	}
+  .social_icon_style {
+    color: var(--primary-color);
+  }
 
-	transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .social_icon_style {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	//width: max-content;
-	width: auto;
-	white-space: nowrap;
-	font-size: 3rem;
-	color: var(--white-color);
-	text-decoration: none;
-	transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //width: max-content;
+  width: auto;
+  white-space: nowrap;
+  font-size: 3rem;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
 .social_icon_style_2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	//width: max-content;
-	width: auto;
-	white-space: nowrap;
-	font-size: 2rem;
-	color: var(--white-color);
-	text-decoration: none;
-	transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //width: max-content;
+  width: auto;
+  white-space: nowrap;
+  font-size: 2rem;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
 .center {
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-bottom {
-	margin: 30px;
-	font-size: 0.9rem;
-	font-weight: 300;
-	color: var(--white-color);
-	letter-spacing: 1px;
+  margin: 30px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--white-color);
+  letter-spacing: 1px;
 }
 
 .logo-img img {
-	width: 50px;
-	height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .font-card-color {
-	color: whitesmoke;
-	font-weight: 200;
-	display: flex;
+  color: whitesmoke;
+  font-weight: 200;
+  display: flex;
 }
 
 .spotify-pl-card {
-	height: 200px;
-	width: 520px;
-	border-radius: 6px;
-	margin-bottom: 30px;
-	background: var(--full-background-color);
-	transition: 0.2s ease-in-out;
-	cursor: pointer;
+  height: 200px;
+  width: 520px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  background: var(--full-background-color);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .spotify-pl-card:hover {
-	transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .spotify-pl-container {
-	max-width: 450px;
-	height: auto;
-	padding: 20px 0;
-	margin-left: 15px;
+  max-width: 450px;
+  height: auto;
+  padding: 20px 0;
+  margin-left: 15px;
 }
 
 .spotify-pl-title {
-	font-weight: 500;
-	color: var(--secondary-color);
-	font-size: 1.2rem;
-	text-align: left;
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 .spotify-pl-desc {
-	margin-top: 16px;
-	font-weight: 400;
-	font-size: 0.85rem;
-	color: var(--secondary-color);
-	width: 260px;
-	text-align: left;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  width: 260px;
+  text-align: left;
 }
 
 .card-pl-art {
-	height: 200px;
-	width: 200px;
-	background: var(--white-color);
-	margin-right: 0px;
-	border-radius: 6px 0 0 6px;
-	background-size: 202px 202px;
-	background-position: center;
+  height: 200px;
+  width: 200px;
+  background: var(--white-color);
+  margin-right: 0px;
+  border-radius: 6px 0 0 6px;
+  background-size: 202px 202px;
+  background-position: center;
 }
 
 .toggle {
-	margin: 0 20px 20px 20px;
+  margin: 0 20px 20px 20px;
 }

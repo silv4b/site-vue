@@ -1,117 +1,117 @@
 // MODAL STYLES
 
 .modal {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 9;
-	overflow-x: hidden;
-	overflow-y: auto;
-	&__backdrop {
-		position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-color: rgba(0, 0, 0, 0.3);
-		z-index: 1;
-	}
-	&__dialog {
-		position: relative;
-		width: 600px;
-		background-color: var(--primary-color);
-		border-radius: 5px;
-		margin: 50px auto;
-		display: flex;
-		flex-direction: column;
-		z-index: 2;
-		@media screen and (max-width: 992px) {
-			width: 600px !important;
-			@media screen and (max-width: 768px) {
-				width: 350px !important;
-			}
-			@media screen and (max-width: 419px) {
-				width: 290px !important;
-			}
-		}
-	}
-	&__close {
-		width: 30px;
-		height: 30px;
-	}
-	&__header {
-		margin-top: 15px;
-		display: flex;
-		align-items: center !important;
-		justify-content: space-around !important;
-	}
-	&__body {
-		padding: 10px 20px 10px;
-		overflow: auto;
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-	}
-	&__footer {
-		padding: 10px 20px 20px;
-	}
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  &__dialog {
+    position: relative;
+    width: 600px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    @media screen and (max-width: 992px) {
+      width: 600px !important;
+      @media screen and (max-width: 768px) {
+        width: 350px !important;
+      }
+      @media screen and (max-width: 419px) {
+        width: 290px !important;
+      }
+    }
+  }
+  &__close {
+    width: 30px;
+    height: 30px;
+  }
+  &__header {
+    margin-top: 15px;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around !important;
+  }
+  &__body {
+    padding: 10px 20px 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__footer {
+    padding: 10px 20px 20px;
+  }
 }
 .fade-enter-active,
 .fade-leave-active {
-	transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .fade-enter,
 .fade-leave-to {
-	opacity: 0;
+  opacity: 0;
 }
 
 .btn {
-	padding: 8px 16px;
-	border-radius: 5px;
-	&--primary {
-		background-color: green;
-		color: #fff;
-	}
-	&--secondary {
-		background-color: #dddddd;
-		color: #000;
-	}
+  padding: 8px 16px;
+  border-radius: 5px;
+  &--primary {
+    background-color: green;
+    color: #fff;
+  }
+  &--secondary {
+    background-color: #dddddd;
+    color: #000;
+  }
 }
 
 // UTILITIES
 .overflow-hidden {
-	overflow: hidden;
+  overflow: hidden;
 }
 .mx-auto {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .d-flex {
-	display: flex;
+  display: flex;
 }
 .align-items-center {
-	align-items: center;
+  align-items: center;
 }
 .justify-content-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 // RESET
 button {
-	background: none;
-	border: none;
-	outline: inherit;
-	cursor: pointer;
+  background: none;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
 }
 
 h1,
 p {
-	color: var(--white-color);
+  color: var(--white-color);
 }
 
 h1 {
-	font-weight: 300;
-	margin: 0;
+  font-weight: 300;
+  margin: 0;
 }

@@ -16,12 +16,7 @@
       </div>
       <!-- REDES SOCIAIS -->
       <div class="container-row">
-        <div
-          v-for="sl in socialList"
-          v-bind:key="sl.id"
-          :class="classCard"
-          @click="openLink(sl.href)"
-        >
+        <div v-for="sl in socialList" v-bind:key="sl.id" :class="classCard" @click="openLink(sl.href)">
           <a :href="sl.href" target="_blank" :class="classSocialIcons">
             <i :class="sl.iclass"></i>
           </a>
@@ -29,11 +24,7 @@
       </div>
       <!-- MODAL PLAYLISTS SPOTIFY -->
       <div class="container">
-        <div
-          type="button"
-          @click="$refs.modalName.openModal()"
-          class="spotify-button"
-        >
+        <div type="button" @click="$refs.modalName.openModal()" class="spotify-button">
           <div class="container-row">
             <a class="social_icon_style_2">
               <i class="bx bxs-playlist"></i>
@@ -47,16 +38,8 @@
           </template>
           <template v-slot:body>
             <div class="container font-card-color">
-              <div
-                v-for="pl in playList"
-                v-bind:key="pl.id"
-                class="flex left spotify-pl-card"
-                @click="openLink(pl.link)"
-              >
-                <div
-                  :class="pl.cover"
-                  :style="{ 'background-image': `url(${pl.image})` }"
-                ></div>
+              <div v-for="pl in playList" v-bind:key="pl.id" class="flex left spotify-pl-card" @click="openLink(pl.link)">
+                <div :class="pl.cover" :style="{ 'background-image': `url(${pl.image})` }"></div>
                 <div class="spotify-pl-container">
                   <div class="spotify-pl-title">{{ pl.nome }}</div>
                   <div class="spotify-pl-desc">{{ pl.desc }}</div>

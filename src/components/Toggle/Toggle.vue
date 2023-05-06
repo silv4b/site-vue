@@ -1,26 +1,13 @@
 <!-- TOGGLE -->
 <template>
   <div>
-    <vue-scroll-progress-bar
-      height="0.3rem"
-      zIndex="999"
-      backgroundColor="linear-gradient(to right, var(--white-color), var(--white-color))"
-    />
+    <vue-scroll-progress-bar height="0.3rem" zIndex="999" backgroundColor="linear-gradient(to right, var(--white-color), var(--white-color))" />
     <div class="container">
-      <input
-        @change="toggleTheme"
-        id="checkbox"
-        type="checkbox"
-        class="switch-checkbox"
-        zIndex="999"
-      />
+      <input @change="toggleTheme" id="checkbox" type="checkbox" class="switch-checkbox" zIndex="999" />
       <label for="checkbox" class="switch-label">
-          <span class="bx-spin">🌙</span>
-          <span class="bx-spin">☀️</span>
-        <div
-          class="switch-toggle"
-          :class="{ 'switch-toggle-checked': userTheme === 'dark-theme' }"
-        ></div>
+        <span>🌙</span>
+        <span>☀️</span>
+        <div class="switch-toggle" :class="{ 'switch-toggle-checked': userTheme === 'dark-theme' }"></div>
       </label>
     </div>
   </div>
