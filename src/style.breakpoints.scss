@@ -1,53 +1,38 @@
 @media screen and (max-width: 640px) {
-	.master-border {
-		margin-top: 5vh;
-		margin-bottom: 50px;
-	}
-
-	.profile {
-		margin-top: 30px;
-	}
+  // keep
 }
 
 @media screen and (max-width: 768px) {
-	.spotify-pl-title,
-	.spotify-pl-desc {
-		display: none;
-	}
+  .spotify-pl-title,
+  .spotify-pl-desc {
+    display: none;
+  }
 
-	.spotify-pl-card {
-		width: 200px !important;
-	}
+  .spotify-pl-card {
+    width: 200px !important;
+  }
 
-	.card-pl-art,
-	.card-pl-art2 {
-		margin-right: 0 !important;
-		border-radius: 6px !important;
-	}
+  .card-pl-art,
+  .card-pl-art2 {
+    margin-right: 0 !important;
+    border-radius: 6px !important;
+  }
 
-	.modal__header {
-		padding: 20px 60px 10px !important;
-	}
+  .modal__header {
+    padding: 20px 60px 10px !important;
+  }
 
-	.profile {
-		margin-top: 30px !important;
-	}
-
-	.spotify-pl-container {
-		margin-left: 0px !important;
-	}
+  .spotify-pl-container {
+    margin-left: 0px !important;
+  }
 }
 
 @media screen and (max-width: 419px) {
-	.spotify-button {
-		width: 240px !important;
-	}
+  .spotify-button {
+    width: 240px !important;
+  }
 
-	.modal__dialog {
-		width: 290px !important;
-	}
-
-	.profile {
-		margin-top: 30px;
-	}
+  .modal__dialog {
+    width: 290px !important;
+  }
 }
